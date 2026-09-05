@@ -12,6 +12,7 @@ An end-to-end AI fraud risk assessment platform that analyzes payment transactio
 
 ![AI Risk Manager Dashboard](Razorpay-fraud-ai/dashboard.png)
 
+
 ---
 
 ## 🚀 Overview
@@ -305,6 +306,9 @@ Risk Level:        HIGH
 Action:            REVIEW
 Actual Fraud:      Yes
 🏗️ System Architecture
+
+![AI Risk Manager Architecture](Razorpay-fraud-ai/Architecture.png)
+
                      USER
                       │
                       ▼
