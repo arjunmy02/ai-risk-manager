@@ -61,7 +61,7 @@ Therefore, AI Risk Manager treats fraud detection as a **risk decisioning proble
 
 The system follows this pipeline:
 
-```text
+
 Transaction
      ↓
 Feature Engineering
@@ -86,7 +86,7 @@ The machine learning model estimates the probability that a transaction is fraud
 
 Example:
 
-```text
+
 Fraud Probability: 87.43%
 Risk Level: HIGH
 Action: REVIEW
