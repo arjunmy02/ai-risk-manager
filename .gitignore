@@ -1,1 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
 
+# Training data
+data/
+*.csv
+
+# Machine learning generated files
+*.pkl
+
+# Spring Boot / Maven
+target/
+*.class
+
+# Environment files
+.env
+.env.*
+
+# IDE files
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
