@@ -8,6 +8,12 @@ An end-to-end AI fraud risk assessment platform that analyzes payment transactio
 
 ---
 
+## 🖥️ Dashboard
+
+![AI Risk Manager Dashboard](Razorpay-fraud-ai/dashboard.png)
+
+---
+
 ## 🚀 Overview
 
 AI Risk Manager is a defense-only fraud detection and risk decisioning system.
