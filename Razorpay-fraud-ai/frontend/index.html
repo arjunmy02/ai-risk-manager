@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Risk Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- =====================================================
+         SIDEBAR
+         ===================================================== -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-logo">
+                R
+            </div>
+
+            <div>
+                <h2>Risk Manager</h2>
+                <p>AI Fraud Intelligence</p>
+            </div>
+
+        </div>
+
+
+        <div class="side-section">
+
+            <span class="side-title">
+                MONITORING
+            </span>
+
+
+            <div class="side-item active">
+
+                <span>◈</span>
+
+                Risk Analysis
+
+            </div>
+
+
+            <div class="side-item">
+
+                <span>◉</span>
+
+                Model Performance
+
+            </div>
+
+
+            <div class="side-item">
+
+                <span>◇</span>
+
+                Threshold Analysis
+
+            </div>
+
+        </div>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="engine-card">
+
+                <div class="engine-status">
+
+                    <span class="online-dot"></span>
+
+                    <div>
+                        <strong>AI Engine Online</strong>
+                        <small>Spring Boot + FastAPI</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="defense">
+                🛡 Defense-only fraud detection
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MAIN
+         ===================================================== -->
+
+    <main class="main">
+
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <div>
+
+                <div class="breadcrumb">
+                    Risk Intelligence
+                    <span>/</span>
+                    Transaction Analysis
+                </div>
+
+                <h1>AI Risk Manager</h1>
+
+                <p>
+                    Explainable payment fraud detection and risk decisioning
+                </p>
+
+            </div>
+
+
+            <div class="system-status">
+
+                <span class="online-dot"></span>
+
+                <div>
+
+                    <strong>System Operational</strong>
+
+                    <small>
+                        ML service connected
+                    </small>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =====================================================
+             KPI CARDS
+             ===================================================== -->
+
+        <section class="stats-grid">
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon purple">
+                    ◈
+                </div>
+
+                <div>
+
+                    <span>TEST SET</span>
+
+                    <strong>
+                        118,108
+                    </strong>
+
+                    <small>
+                        Held-out transactions
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon green">
+                    ✓
+                </div>
+
+                <div>
+
+                    <span>PRECISION</span>
+
+                    <strong>
+                        24.99%
+                    </strong>
+
+                    <small>
+                        At 70% threshold
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon orange">
+                    ↗
+                </div>
+
+                <div>
+
+                    <span>RECALL</span>
+
+                    <strong>
+                        36.75%
+                    </strong>
+
+                    <small>
+                        Fraud detected
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon red">
+                    !
+                </div>
+
+                <div>
+
+                    <span>THRESHOLD</span>
+
+                    <strong>
+                        70%
+                    </strong>
+
+                    <small>
+                        Selected operating point
+                    </small>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             MAIN ANALYSIS
+             ===================================================== -->
+
+        <section class="analysis-grid">
+
+
+            <!-- =================================================
+                 LEFT: TRANSACTION INPUT
+                 ================================================= -->
+
+            <section class="card transaction-card">
+
+
+                <div class="card-heading">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            TRANSACTION INPUT
+                        </span>
+
+                        <h2>
+                            Analyze a Transaction
+                        </h2>
+
+                        <p>
+                            Evaluate payment signals using the trained fraud model.
+                        </p>
+
+                    </div>
+
+
+                    <span class="section-number">
+                        01
+                    </span>
+
+                </div>
+
+
+
+                <!-- DEMO BOX -->
+
+                <div class="demo-box">
+
+
+                    <div class="demo-heading">
+
+                        <div>
+
+                            <strong>
+                                Try a demo scenario
+                            </strong>
+
+                            <span>
+                                Real held-out examples
+                            </span>
+
+                        </div>
+
+
+                        <b>
+                            DEMO
+                        </b>
+
+                    </div>
+
+
+
+                    <div class="demo-buttons">
+
+
+                        <button
+                            type="button"
+                            class="demo-button normal"
+                            onclick="loadDemo('normal')">
+
+                            <span class="demo-dot"></span>
+
+                            <span>
+                                Normal Transaction
+                            </span>
+
+                        </button>
+
+
+
+                        <button
+                            type="button"
+                            class="demo-button suspicious"
+                            onclick="loadDemo('suspicious')">
+
+                            <span class="demo-dot"></span>
+
+                            <span>
+                                Suspicious Transaction
+                            </span>
+
+                        </button>
+
+
+
+                        <button
+                            type="button"
+                            class="demo-button high"
+                            onclick="loadDemo('high')">
+
+                            <span class="demo-dot"></span>
+
+                            <span>
+                                High-Risk Transaction
+                            </span>
+
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- FORM -->
+
+                <form id="transactionForm">
+
+
+                    <div class="form-title">
+                        Payment & Identity Signals
+                    </div>
+
+
+
+                    <div class="form-grid">
+
+
+                        <!-- AMOUNT -->
+
+                        <div class="field">
+
+                            <label for="TransactionAmt">
+                                Transaction Amount
+                            </label>
+
+                            <div class="money-input">
+
+                                <span>₹</span>
+
+                                <input
+                                    type="number"
+                                    id="TransactionAmt"
+                                    value="2500"
+                                    step="any"
+                                    min="0"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- HOUR -->
+
+                        <div class="field">
+
+                            <label for="TransactionHour">
+                                Transaction Hour
+                            </label>
+
+                            <input
+                                type="number"
+                                id="TransactionHour"
+                                value="2"
+                                min="0"
+                                max="23"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <!-- PRODUCT -->
+
+                        <div class="field">
+
+                            <label for="ProductCD">
+                                Product Category
+                            </label>
+
+                            <input
+                                type="text"
+                                id="ProductCD"
+                                value="W"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <!-- CARD NETWORK -->
+
+                        <div class="field">
+
+                            <label for="card4">
+                                Card Network
+                            </label>
+
+                            <input
+                                type="text"
+                                id="card4"
+                                value="visa"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <!-- CARD CATEGORY -->
+
+                        <div class="field">
+
+                            <label for="card6">
+                                Card Category
+                            </label>
+
+                            <input
+                                type="text"
+                                id="card6"
+                                value="credit"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <!-- DEVICE -->
+
+                        <div class="field">
+
+                            <label for="DeviceType">
+                                Device Type
+                            </label>
+
+                            <input
+                                type="text"
+                                id="DeviceType"
+                                value="desktop"
+                                placeholder="Not Available"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <!-- BROWSER -->
+
+                        <div class="field">
+
+                            <label for="id_31">
+                                Browser
+                            </label>
+
+                            <input
+                                type="text"
+                                id="id_31"
+                                value="chrome"
+                                placeholder="Not Available"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <!-- OS -->
+
+                        <div class="field">
+
+                            <label for="id_30">
+                                Operating System
+                            </label>
+
+                            <input
+                                type="text"
+                                id="id_30"
+                                value="Windows 10"
+                                placeholder="Not Available"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <!-- SCREEN -->
+
+                        <div class="field">
+
+                            <label for="id_33">
+                                Screen Resolution
+                            </label>
+
+                            <input
+                                type="text"
+                                id="id_33"
+                                value="1920x1080"
+                                placeholder="Not Available"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <!-- EMAIL -->
+
+                        <div class="field">
+
+                            <label for="P_emaildomain">
+                                Purchaser Email Domain
+                            </label>
+
+                            <input
+                                type="text"
+                                id="P_emaildomain"
+                                value="gmail.com"
+                                required
+                            >
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- ANALYZE -->
+
+                    <button
+                        type="submit"
+                        id="analyzeButton"
+                        class="analyze-button">
+
+                        <span class="button-icon">
+                            ⌁
+                        </span>
+
+                        <span class="button-text">
+                            Analyze Transaction
+                        </span>
+
+                        <span class="button-arrow">
+                            →
+                        </span>
+
+                    </button>
+
+
+
+                    <div class="form-note">
+                        🔒 Analysis performed through the project's ML service.
+                    </div>
+
+
+                </form>
+
+
+
+                <!-- =================================================
+                     SIGNAL COVERAGE
+                     ================================================= -->
+
+                <div class="signal-coverage">
+
+
+                    <div class="coverage-heading">
+
+                        <div>
+
+                            <span class="eyebrow">
+                                SIGNAL COVERAGE
+                            </span>
+
+                            <h3>
+                                Fraud Detection Signals
+                            </h3>
+
+                            <p>
+                                Signal groups used by the risk model
+                            </p>
+
+                        </div>
+
+
+                        <span class="coverage-count">
+                            6 GROUPS
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="coverage-grid">
+
+
+                        <div class="coverage-item">
+
+                            <span class="coverage-icon">
+                                ₹
+                            </span>
+
+                            <div>
+                                <strong>
+                                    Transaction
+                                </strong>
+
+                                <small>
+                                    Amount & timing
+                                </small>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="coverage-item">
+
+                            <span class="coverage-icon">
+                                ↗
+                            </span>
+
+                            <div>
+                                <strong>
+                                    Velocity
+                                </strong>
+
+                                <small>
+                                    Recent activity
+                                </small>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="coverage-item">
+
+                            <span class="coverage-icon">
+                                ◷
+                            </span>
+
+                            <div>
+                                <strong>
+                                    History
+                                </strong>
+
+                                <small>
+                                    Card behavior
+                                </small>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="coverage-item">
+
+                            <span class="coverage-icon">
+                                ◉
+                            </span>
+
+                            <div>
+                                <strong>
+                                    Device
+                                </strong>
+
+                                <small>
+                                    Identity signals
+                                </small>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="coverage-item">
+
+                            <span class="coverage-icon">
+                                #
+                            </span>
+
+                            <div>
+                                <strong>
+                                    Payment
+                                </strong>
+
+                                <small>
+                                    Card signals
+                                </small>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="coverage-item">
+
+                            <span class="coverage-icon">
+                                ◎
+                            </span>
+
+                            <div>
+                                <strong>
+                                    Location
+                                </strong>
+
+                                <small>
+                                    Address signals
+                                </small>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 RIGHT: RISK ASSESSMENT
+                 ================================================= -->
+
+            <section class="card result-card">
+
+
+                <div class="card-heading result-heading">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            AI DECISION
+                        </span>
+
+                        <h2>
+                            Risk Assessment
+                        </h2>
+
+                        <p>
+                            Transaction ID:
+                            <strong id="transactionId">—</strong>
+                        </p>
+
+                    </div>
+
+
+                    <div
+                        id="riskBadge"
+                        class="risk-badge">
+
+                        —
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SCORE -->
+
+                <div class="score-area">
+
+                    <div class="score-ring">
+
+                        <div class="score-inner">
+
+                            <span id="riskScore">
+                                0.00%
+                            </span>
+
+                            <small>
+                                Fraud Risk Score
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- DECISION -->
+
+                <div class="decision-card">
+
+
+                    <div class="decision-icon">
+                        ⚡
+                    </div>
+
+
+                    <div class="decision-content">
+
+                        <span>
+                            RECOMMENDED ACTION
+                        </span>
+
+                        <strong id="riskAction">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <span class="decision-arrow">
+                        →
+                    </span>
+
+
+                </div>
+
+
+
+                <!-- SHAP -->
+
+                <div class="result-block">
+
+
+                    <div class="block-heading">
+
+                        <div>
+
+                            <h3>
+                                Why this decision?
+                            </h3>
+
+                            <p>
+                                Top factors influencing the prediction
+                            </p>
+
+                        </div>
+
+
+                        <span class="shap-tag">
+                            SHAP
+                        </span>
+
+                    </div>
+
+
+
+                    <div id="reasonsContainer">
+
+
+                        <div class="empty-state">
+
+                            <span>
+                                ◈
+                            </span>
+
+                            <p>
+                                Run an analysis to see the model explanation.
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- SIGNAL INTELLIGENCE -->
+
+                <div class="result-block">
+
+
+                    <div class="block-heading">
+
+                        <div>
+
+                            <h3>
+                                Signal Intelligence
+                            </h3>
+
+                            <p>
+                                Available signal categories
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="signal-list">
+
+
+                        <div class="signal-row">
+
+                            <div class="signal-name">
+
+                                <span class="signal-icon">
+                                    ₹
+                                </span>
+
+                                Transaction Behavior
+
+                            </div>
+
+                            <strong id="transactionSignal">
+                                —
+                            </strong>
+
+                        </div>
+
+
+
+                        <div class="signal-row">
+
+                            <div class="signal-name">
+
+                                <span class="signal-icon">
+                                    ↗
+                                </span>
+
+                                Transaction Velocity
+
+                            </div>
+
+                            <strong id="velocitySignal">
+                                —
+                            </strong>
+
+                        </div>
+
+
+
+                        <div class="signal-row">
+
+                            <div class="signal-name">
+
+                                <span class="signal-icon">
+                                    ◷
+                                </span>
+
+                                Historical Behavior
+
+                            </div>
+
+                            <strong id="historySignal">
+                                —
+                            </strong>
+
+                        </div>
+
+
+
+                        <div class="signal-row">
+
+                            <div class="signal-name">
+
+                                <span class="signal-icon">
+                                    ◉
+                                </span>
+
+                                Device / Identity
+
+                            </div>
+
+                            <strong id="deviceSignal">
+                                —
+                            </strong>
+
+                        </div>
+
+
+
+                        <div class="signal-row">
+
+                            <div class="signal-name">
+
+                                <span class="signal-icon">
+                                    #
+                                </span>
+
+                                Card / Payment
+
+                            </div>
+
+                            <strong id="cardSignal">
+                                —
+                            </strong>
+
+                        </div>
+
+
+
+                        <div class="signal-row">
+
+                            <div class="signal-name">
+
+                                <span class="signal-icon">
+                                    ◎
+                                </span>
+
+                                Address / Location
+
+                            </div>
+
+                            <strong id="locationSignal">
+                                —
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             MODEL PERFORMANCE
+             ===================================================== -->
+
+        <section class="card full-card">
+
+
+            <div class="card-heading">
+
+                <div>
+
+                    <span class="eyebrow">
+                        MODEL EVALUATION
+                    </span>
+
+                    <h2>
+                        Performance on Held-Out Data
+                    </h2>
+
+                    <p>
+                        Honest evaluation at the selected operating threshold.
+                    </p>
+
+                </div>
+
+
+                <span class="evaluation-pill">
+                    TEST SET · 118,108
+                </span>
+
+            </div>
+
+
+
+            <div class="metric-grid">
+
+
+                <div class="metric">
+
+                    <span>
+                        Precision
+                    </span>
+
+                    <strong>
+                        24.99%
+                    </strong>
+
+                    <small>
+                        At 70% threshold
+                    </small>
+
+                </div>
+
+
+
+                <div class="metric">
+
+                    <span>
+                        Recall
+                    </span>
+
+                    <strong>
+                        36.75%
+                    </strong>
+
+                    <small>
+                        Fraud detected
+                    </small>
+
+                </div>
+
+
+
+                <div class="metric">
+
+                    <span>
+                        F1 Score
+                    </span>
+
+                    <strong>
+                        29.75%
+                    </strong>
+
+                    <small>
+                        Balance
+                    </small>
+
+                </div>
+
+
+
+                <div class="metric">
+
+                    <span>
+                        False Positives
+                    </span>
+
+                    <strong>
+                        4,560
+                    </strong>
+
+                    <small>
+                        Legitimate flagged
+                    </small>
+
+                </div>
+
+
+
+                <div class="metric">
+
+                    <span>
+                        Missed Fraud
+                    </span>
+
+                    <strong>
+                        2,614
+                    </strong>
+
+                    <small>
+                        False negatives
+                    </small>
+
+                </div>
+
+
+
+                <div class="metric">
+
+                    <span>
+                        Cost
+                    </span>
+
+                    <strong>
+                        307,000
+                    </strong>
+
+                    <small>
+                        Illustrative
+                    </small>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CONFUSION MATRIX
+             ===================================================== -->
+
+        <section class="card full-card">
+
+
+            <div class="card-heading">
+
+                <div>
+
+                    <span class="eyebrow">
+                        ERROR ANALYSIS
+                    </span>
+
+                    <h2>
+                        Confusion Matrix
+                    </h2>
+
+                    <p>
+                        Held-out test outcomes at the 70% threshold.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="confusion-grid">
+
+
+                <div class="confusion-item tn">
+
+                    <span>
+                        TRUE NEGATIVE
+                    </span>
+
+                    <strong>
+                        109,415
+                    </strong>
+
+                    <small>
+                        Legitimate correctly allowed
+                    </small>
+
+                </div>
+
+
+
+                <div class="confusion-item fp">
+
+                    <span>
+                        FALSE POSITIVE
+                    </span>
+
+                    <strong>
+                        4,560
+                    </strong>
+
+                    <small>
+                        Legitimate transactions flagged
+                    </small>
+
+                </div>
+
+
+
+                <div class="confusion-item fn">
+
+                    <span>
+                        FALSE NEGATIVE
+                    </span>
+
+                    <strong>
+                        2,614
+                    </strong>
+
+                    <small>
+                        Fraud transactions missed
+                    </small>
+
+                </div>
+
+
+
+                <div class="confusion-item tp">
+
+                    <span>
+                        TRUE POSITIVE
+                    </span>
+
+                    <strong>
+                        1,519
+                    </strong>
+
+                    <small>
+                        Fraud transactions detected
+                    </small>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             THRESHOLD
+             ===================================================== -->
+
+        <section class="card full-card">
+
+
+            <div class="card-heading">
+
+                <div>
+
+                    <span class="eyebrow">
+                        DECISION POLICY
+                    </span>
+
+                    <h2>
+                        Threshold & Cost Analysis
+                    </h2>
+
+                    <p>
+                        Comparing precision, recall and illustrative cost.
+                    </p>
+
+                </div>
+
+
+                <span class="selected-pill">
+                    70% SELECTED
+                </span>
+
+            </div>
+
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                    <tr>
+
+                        <th>
+                            Threshold
+                        </th>
+
+                        <th>
+                            Precision
+                        </th>
+
+                        <th>
+                            Recall
+                        </th>
+
+                        <th>
+                            Illustrative Cost
+                        </th>
+
+                        <th>
+                            Status
+                        </th>
+
+                    </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                    <tr>
+
+                        <td>
+                            30%
+                        </td>
+
+                        <td>
+                            3.84%
+                        </td>
+
+                        <td>
+                            98.91%
+                        </td>
+
+                        <td>
+                            1,027,110
+                        </td>
+
+                        <td>
+                            —
+                        </td>
+
+                    </tr>
+
+
+
+                    <tr>
+
+                        <td>
+                            40%
+                        </td>
+
+                        <td>
+                            7.37%
+                        </td>
+
+                        <td>
+                            79.24%
+                        </td>
+
+                        <td>
+                            497,460
+                        </td>
+
+                        <td>
+                            —
+                        </td>
+
+                    </tr>
+
+
+
+                    <tr>
+
+                        <td>
+                            50%
+                        </td>
+
+                        <td>
+                            12.01%
+                        </td>
+
+                        <td>
+                            62.86%
+                        </td>
+
+                        <td>
+                            343,900
+                        </td>
+
+                        <td>
+                            —
+                        </td>
+
+                    </tr>
+
+
+
+                    <tr>
+
+                        <td>
+                            60%
+                        </td>
+
+                        <td>
+                            16.64%
+                        </td>
+
+                        <td>
+                            49.21%
+                        </td>
+
+                        <td>
+                            311,790
+                        </td>
+
+                        <td>
+                            —
+                        </td>
+
+                    </tr>
+
+
+
+                    <tr class="selected-row">
+
+                        <td>
+                            <strong>
+                                70%
+                            </strong>
+                        </td>
+
+                        <td>
+                            <strong>
+                                24.99%
+                            </strong>
+                        </td>
+
+                        <td>
+                            <strong>
+                                36.75%
+                            </strong>
+                        </td>
+
+                        <td>
+                            <strong>
+                                307,000
+                            </strong>
+                        </td>
+
+                        <td>
+
+                            <span class="best-badge">
+                                SELECTED
+                            </span>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <tr>
+
+                        <td>
+                            80%
+                        </td>
+
+                        <td>
+                            46.56%
+                        </td>
+
+                        <td>
+                            12.12%
+                        </td>
+
+                        <td>
+                            368,950
+                        </td>
+
+                        <td>
+                            —
+                        </td>
+
+                    </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+
+            <div class="cost-note">
+
+                <span>
+                    ⓘ
+                </span>
+
+                <p>
+                    Cost uses illustrative assumptions of 10 units per
+                    false positive and 100 units per missed fraud.
+                    It is not a Razorpay production cost estimate.
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             ARCHITECTURE
+             ===================================================== -->
+
+        <section class="architecture">
+
+
+            <div class="architecture-header">
+
+                <div>
+
+                    <span class="eyebrow">
+                        SYSTEM ARCHITECTURE
+                    </span>
+
+                    <h2>
+                        Explainable AI Risk Pipeline
+                    </h2>
+
+                    <p>
+                        Transaction signals flow through the application,
+                        ML service and explanation layer before a risk decision.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="flow">
+
+
+                <div class="flow-item">
+
+                    <small>
+                        01
+                    </small>
+
+                    Frontend
+
+                </div>
+
+
+                <b>
+                    →
+                </b>
+
+
+                <div class="flow-item">
+
+                    <small>
+                        02
+                    </small>
+
+                    Spring Boot
+
+                </div>
+
+
+                <b>
+                    →
+                </b>
+
+
+                <div class="flow-item">
+
+                    <small>
+                        03
+                    </small>
+
+                    FastAPI
+
+                </div>
+
+
+                <b>
+                    →
+                </b>
+
+
+                <div class="flow-item">
+
+                    <small>
+                        04
+                    </small>
+
+                    ML + SHAP
+
+                </div>
+
+
+                <b>
+                    →
+                </b>
+
+
+                <div class="flow-item final">
+
+                    <small>
+                        05
+                    </small>
+
+                    Risk Decision
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            AI Risk Manager
+
+            <b>•</b>
+
+            Explainable Fraud Detection
+
+            <b>•</b>
+
+            Defense-only
+
+        </footer>
+
+
+    </main>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
