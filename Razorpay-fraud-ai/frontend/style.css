@@ -4161,16 +4161,8 @@ footer b {
     font-weight: 850 !important;
 }
 
-.transaction-card .coverage-heading p {
-    font-size: 11px !important;
-}
-
 .transaction-card .coverage-item strong {
     font-size: 12px !important;
-}
-
-.transaction-card .coverage-item small {
-    font-size: 10px !important;
 }
 /* =========================================================
    LABEL BIGGER — INPUT VALUE SMALLER
@@ -4304,127 +4296,6 @@ footer b {
 .risk-assessment p {
     font-size: 12px;
     color: #737b8c;
-}
-/* =====================================
-   AI EXPLANATION / SHAP REASONS
-===================================== */
-
-#reasonsContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-}
-
-.reason-card {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 13px 15px;
-    border: 1px solid #e5e7eb;
-    border-radius: 10px;
-    background: #ffffff;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.reason-card:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 14px rgba(30, 35, 50, 0.06);
-}
-
-.reason-left {
-    min-width: 0;
-    display: flex;
-    align-items: center;
-    gap: 11px;
-}
-
-.reason-icon {
-    width: 30px;
-    height: 30px;
-    border-radius: 8px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 13px;
-    font-weight: 800;
-    flex-shrink: 0;
-}
-
-.reason-feature {
-    font-size: 13px;
-    font-weight: 700;
-    color: #30394b;
-
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.reason-impact {
-    font-size: 11px;
-    font-weight: 700;
-    padding: 5px 9px;
-    border-radius: 999px;
-    white-space: nowrap;
-}
-
-.reason-value {
-    font-size: 11px;
-    font-weight: 600;
-    color: #7b8494;
-    white-space: nowrap;
-}
-
-/* Higher fraud risk */
-.reason-card.higher-risk {
-    border-left: 3px solid #ef4444;
-}
-
-.reason-card.higher-risk .reason-icon {
-    background: #fff1f2;
-    color: #dc2626;
-}
-
-.reason-card.higher-risk .reason-impact {
-    background: #fff1f2;
-    color: #dc2626;
-}
-
-/* Lower fraud risk */
-.reason-card.lower-risk {
-    border-left: 3px solid #22c55e;
-}
-
-.reason-card.lower-risk .reason-icon {
-    background: #f0fdf4;
-    color: #16a34a;
-}
-
-.reason-card.lower-risk .reason-impact {
-    background: #f0fdf4;
-    color: #16a34a;
-}
-
-/* Mobile */
-@media (max-width: 700px) {
-    .reason-card {
-        align-items: flex-start;
-    }
-
-    .reason-right {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 4px;
-    }
 }
 /* =====================================
    AI EXPLANATION / SHAP REASONS
